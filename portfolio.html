@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luiz Fernando Nardi | Portfolio</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <!-- Cabecalho fixo com menu de navegacao por ancoras -->
+    <header class="cabecalho">
+        <nav class="menu">
+            <a href="#inicio" class="logo">Luiz Fernando Nardi</a>
+            <button id="botao-menu" class="botao-menu" aria-label="Abrir menu">?</button>
+            <ul id="lista-menu" class="lista-menu">
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <button id="alternar-tema" class="botao-tema">Alternar tema</button>
+        </nav>
+    </header>
+    <main>
+        <!-- Secao inicial de apresentação -->
+        <section id="inicio" class="hero secao">
+            <div class="hero-texto">
+                <p class="destaque">Portfolio pessoal</p>
+                <h1>Olá, eu sou Luiz Fernando Nardi</h1>
+                <p>
+                    Profissional do mercado financeiro, formado em Administração de Empresas
+                    e estudante de Analise e Desenvolvimento de Sistemas. Tenho interesse em
+                    tecnologia, investimentos, desenvolvimento web e inteligência artificial.
+                </p>
+                <a href="#contato" class="botao-principal">Entrar em contato</a>
+            </div>
+            <div class="card-perfil">
+                <div class="avatar">LN</div>
+                <h2>Luiz Fernando Nardi</h2>
+                <p>Administração | ADS | Tecnologia | Investimentos</p>
+            </div>
+        </section>
+        <!-- Secao obrigatoria: Sobre mim -->
+        <section id="sobre" class="secao">
+            <h2>Sobre mim</h2>
+            <p>
+                Atuo há mais de 10 anos no mercado financeiro, com foco na gestão de relacionamento,
+                planejamento patrimonial e estruturação de soluções financeiras para clientes alta
+                renda. Ao longo da minha carreira, desenvolvi experiência na expansão e gestão de 
+                carteiras relevantes, com foco em geração de valor, fidelização e crescimento 
+                sustentável dos negócios.
+            </p>
+            <p>
+                Atualmente, estou cursando Analise e Desenvolvimento de Sistemas com o objetivo
+                de ampliar meus conhecimentos em programação, desenvolvimento web e criação de
+                soluções digitais. Também gosto de estudar temas relacionados a inteligência
+                artificial, finanças pessoais e novas tecnologias.
+            </p>
+            <div class="cards">
+                <article class="card">
+                    <h3>Interesses</h3>
+                    <p>Investimentos, tecnologia, programação, IA e educação financeira.</p>
+                </article>
+                <article class="card">
+                    <h3>Objetivo</h3>
+                    <p>Unir conhecimento financeiro e tecnologia para desenvolver soluções 
+                        úteis.</p>
+                </article>
+                <article class="card">
+                    <h3>Hobbies</h3>
+                    <p>Estudar tecnologia, ler livros, acompanhar o mercado financeiro e cuidar da 
+                        saúde.</p>
+                </article>
+            </div>
+        </section>
+        <!-- Secao obrigatoria: Formacao -->
+        <section id="formacao" class="secao secao-alternativa">
+            <h2>Formação</h2>
+            <div class="linha-tempo">
+                <article>
+                    <h3>Analise e Desenvolvimento de Sistemas</h3>
+                    <p>Curso superior em andamento, com foco em fundamentos de programação, 
+                        web, banco de dados e desenvolvimento de sistemas.</p>
+                </article>
+                <article>
+                    <h3>Administração de Empresas</h3>
+                    <p>Formação superior concluída, com base em gestão, negócios, finanças e 
+                        estratégia empresarial.</p>
+                </article>
+                <article>
+                    <h3>Certificação CFP&reg;</h3>
+                    <p>Certificação relacionada ao planejamento financeiro, gestão de ativos, 
+                        investimentos, seguros, tributário e sucessório.</p>
+                </article>
+                <article>
+                    <h3>Idiomas</h3>
+                    <p>Inglês em desenvolvimento, com foco em leitura, vocabulário profissional
+                         e comunicação básica.</p>
+                </article>
+            </div>
+        </section>
+        <!-- Secao obrigatoria: Portfolio -->
+        <section id="portfolio" class="secao">
+            <h2>Portfolio</h2>
+            <p>
+                Abaixo estão alguns projetos e ideias em desenvolvimento, conectando 
+                    tecnologia,
+                finanças e organização pessoal.
+            </p>
+            <div class="cards">
+                <article class="card projeto">
+                    <h3>Finanças Simplificada</h3>
+                    <p>Estou estudando a criação de um site de organização pessoal,
+                        onde será possível cada indivíduo ter um controle fácil
+                        de suas finanças pessoais.</p>
+                    <a href="https://github.com/" target="_blank" rel="noopener">Ver referencia
+                         no GitHub</a>
+                </article>
+                <article class="card projeto">
+                    <h3>Portfolio Acadêmico</h3>
+                    <p>Site pessoal criado com HTML5, CSS3 e JavaScript puro para a atividade 
+                        prática de Fundamentos de Programação Web.</p>
+                    <a href="#inicio">Ver este projeto</a>
+                </article>
+                <article class="card projeto">
+                    <h3>Automação Residencial</h3>
+                    <p>Estudo de soluções de rede, câmeras, dispositivos inteligentes e 
+                        automação para melhorar segurança e praticidade residencial.</p>
+                    <a href="#contato">Solicitar informações</a>
+                </article>
+            </div>
+        </section>
+        <!-- Secao obrigatoria: Contato com validacao em JavaScript -->
+        <section id="contato" class="secao secao-alternativa">
+            <h2>Contato</h2>
+            <p>Preencha o formulário abaixo para simular o envio de uma mensagem.</p>
+            <form id="formulario-contato" class="formulario" novalidate>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua 
+                    mensagem"></textarea>
+                <button type="submit" class="botao-principal">Enviar mensagem</button>
+                <p id="mensagem-retorno" class="mensagem-retorno"></p>
+            </form>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>2026 Luiz Fernando Nardi. Portfolio acadêmico desenvolvido com HTML5, CSS3 e 
+            JavaScript.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
